@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.firstText {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  color: white;
+  font-size: 40px;
+}
+
+.mainText {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background: linear-gradient(to left, #FB3089, #f8265b);
+  -webkit-background-clip: text;
+  /* Підтримка для Safari */
+  background-clip: text;
+  color: transparent;
+  font-size: 58px;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.mainText2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background: linear-gradient(to right, #FB3089, #f8265b);
+  -webkit-background-clip: text;
+  /* Підтримка для Safari */
+  background-clip: text;
+  color: transparent;
+  font-size: 58px;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 150px;
+  height: 200px;
+
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  background-color: #f51c51;
+  border-radius: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: white;
+
+}
+
+.pointer {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(66%) saturate(4718%) hue-rotate(335deg) brightness(97%) contrast(97%);
+}
+
+.pulsations {
+  animation: 1.5s pulsations infinite ease-in-out;
+}
+
+@keyframes pulsations {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.myOwnShadow {
+  background: #ff00e1;
+  border-radius: 367px;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  flex-shrink: 0;
+  height: 367px;
+  margin-left: 60px;
+  -webkit-transform: rotate(118.785deg);
+  transform: rotate(118.785deg);
+  width: 99.686px;
+}
